@@ -31,7 +31,7 @@ a {
 
 /* ---------------- HEADER --------------- */
 .space {
-    margin: 55px 60px;
+    margin: 55px 60px 20px 60px;
 }
 
 .logo {
@@ -63,4 +63,36 @@ a {
     color: #f1f1f1;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+}
+
+.main-content .call-to-action {
+    margin-top: 36px;
+}
+
+.main-content a {
+    padding: 15px 65px;
+    background: white;
+    border-radius: 100px;
+    box-shadow: 2px 3px 13px 0px #3a3939b5;
+    color: var(--violet);
+}
+
+
+/* ---------------- FOOTER --------------- */
+footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 115px;
+}
+
+.social img {
+    border: 1px solid white;
+    border-radius: 17px;
+    width: 15px;
+    padding: 7px;
+    margin-right: 5px;
+}
+
+.social img:last-child {
+    margin-right: 0;
 }
