@@ -46,10 +46,13 @@ a {
     grid-template-columns: 55% 45%;
     justify-content: space-between;
     column-gap: 40px;
+    grid-template-areas: "img-hero main-content";
+    
 }
 
 .main-content {
     margin: 20px 72px 0 0;
+    grid-area: main-content;
 }
 
 .main-content h1 {
@@ -57,6 +60,7 @@ a {
     font-weight: 400;
     font-size: 40px; 
     line-height: 55px;
+    padding-bottom: 15px;
 }
 
 .main-content small {
@@ -77,6 +81,9 @@ a {
     color: var(--violet);
 }
 
+.img-hero {
+    grid-area: img-hero;
+}
 
 /* ---------------- FOOTER --------------- */
 footer {
@@ -95,4 +102,131 @@ footer {
 
 .social img:last-child {
     margin-right: 0;
+}
+
+
+/* ---------------- MEDIA QUERIES --------------- */
+@media screen and (max-width:1024px) {
+    body {
+        min-height: 30em;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    .main-content {
+        margin: 0;
+    }
+
+    .main-content h1 {
+        font-size: 30px;
+        line-height: 45px;
+        padding-bottom: 8px;
+    }
+
+    .main-content small {
+        font-size: 15px;
+    }
+
+    footer {
+        margin: 0 35px;
+    }
+
+    .social {
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    body {
+        
+        background-image: url(../images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        
+        background-position-y: 0em;
+        background-position-x: -1em;
+        
+    }
+    
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: "img-hero"
+        "main-content";
+    }
+    
+    .space {
+        
+
+    }
+    
+    .img-hero {
+    }
+    
+    .main-img {
+        
+    }
+}
+
+
+
+@media screen and (max-width:375px) {
+    body {
+        background-image: url(../images/bg-mobile.svg);
+        background-position-y: 3em;
+        background-position-x: 1px;
+        background-position: top center;
+    }
+
+    .space {
+        margin: 33px 27px;
+    }
+
+    .logo {
+        width: 8em;
+    }
+
+    .main-content {
+        display: block;
+        text-align: center;
+        margin-top: 47px;
+    }
+
+    .main-content h1 {
+        text-align: center;
+        font-size: 24px;
+        line-height: 35px;
+        padding-bottom: 10px;
+    }
+
+    .main-content small {
+        display: block;
+        font-size: 14px;
+        line-height: 25px;
+        padding: 0 18px;
+    }
+
+    .main-content .call-to-action {
+        margin-top: 28px;
+    }
+
+    .main-content a {
+        font-size: 14px;
+        padding: 10px 65px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .social {
+        margin: 40px 0 20px 0;
+    }
+
+    .social img {
+        border-radius: 8px;
+    }
 }
