@@ -16,4 +16,3 @@ In this challenge I had to make a similar copy to this Landing Page from Fronten
 
 ## Link del proyecto
 
-[https://www.landing-page.com](https://jeanpaulmatos.github.io/landing-page/ "Introductory Landing Page")
